@@ -173,6 +173,7 @@ service qmiproxy /system/bin/qmiproxy
     group radio gps
 
 service qmuxd /system/bin/qmuxd
+    seclabel u:r:qmuxd:s0
     class main
     user system
     group radio log audio bluetooth gps log
